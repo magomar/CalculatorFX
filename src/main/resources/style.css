@@ -1,0 +1,28 @@
+.background {
+    -fx-background-color: black;
+}
+
+.button {
+    -fx-background-color: silver;
+    -fx-border-color: black;
+    -fx-border-width: 1pt;
+    -fx-font-size: 18pt;
+}
+
+.button:hover {
+    -fx-background-color: darkgray;
+}
+
+.orange-button {
+    -fx-background-color: orange;
+}
+
+.orange-button:hover {
+    -fx-background-color: darkorange;
+}
+
+.display {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-font-size: 24pt;
+}

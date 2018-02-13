@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" prefHeight="398.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8.0.111"
-      fx:controller="calculatorfx.MainViewController">
+<VBox xmlns:fx="http://javafx.com/fxml/1" styleClass="background" stylesheets="@style.css"
+      xmlns="http://javafx.com/javafx/8.0.111" fx:controller="calculatorfx.MainViewController">
     <children>
-        <TextField fx:id="output" alignment="CENTER_RIGHT" editable="false" maxHeight="1.7976931348623157E308"
-                   maxWidth="1.7976931348623157E308" prefHeight="61.0" prefWidth="487.0" text="0"/>
-        <GridPane prefHeight="358.0" VBox.vgrow="ALWAYS">
+        <TextField fx:id="output" alignment="CENTER_RIGHT" editable="false" focusTraversable="false"
+                   maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="61.0"
+                   prefWidth="487.0" styleClass="display" text="0"/>
+        <GridPane prefHeight="450.0" VBox.vgrow="ALWAYS">
             <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
@@ -31,7 +31,8 @@
                 <Button fx:id="MUL" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
                         mnemonicParsing="false" onAction="#operation" text="X" GridPane.columnIndex="2"/>
                 <Button fx:id="SUB" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                        mnemonicParsing="false" onAction="#operation" text="-" GridPane.columnIndex="3">
+                        mnemonicParsing="false" onAction="#operation" styleClass="orange-button" text="-"
+                        GridPane.columnIndex="3">
                     <font>
                         <Font size="24.0"/>
                     </font>
@@ -43,8 +44,8 @@
                 <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
                         onAction="#digit" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
                 <Button fx:id="ADD" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
-                        mnemonicParsing="false" onAction="#operation" text="+" GridPane.columnIndex="3"
-                        GridPane.rowIndex="1" GridPane.rowSpan="2">
+                        mnemonicParsing="false" onAction="#operation" styleClass="orange-button" text="+"
+                        GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.rowSpan="2">
                     <font>
                         <Font size="24.0"/>
                     </font>
@@ -56,8 +57,8 @@
                 <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
                         onAction="#digit" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
                 <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
-                        onAction="#compute" text="=" GridPane.columnIndex="3" GridPane.rowIndex="3"
-                        GridPane.rowSpan="2"/>
+                        onAction="#compute" styleClass="orange-button" text="=" GridPane.columnIndex="3"
+                        GridPane.rowIndex="3" GridPane.rowSpan="2"/>
                 <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
                         onAction="#digit" text="1" GridPane.rowIndex="3"/>
                 <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false"
